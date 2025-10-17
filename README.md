@@ -53,14 +53,14 @@ py='python'         # Python shortcut
 
 #### One-liner Installation
 ```bash
-git clone https://github.com/IlanKog99/zsh-config.git && cd zsh-config && chmod +x setup_zsh.sh && ./setup_zsh.sh && cd .. && rm -rf zsh-config
+git clone https://github.com/IlanKog99/ZSH-backup.git && cd ZSH-backup && chmod +x setup_zsh.sh && ./setup_zsh.sh && cd .. && rm -rf ZSH-backup
 ```
 
 #### Step-by-step Installation
 1. Clone and enter the repository:
 ```bash
-git clone https://github.com/IlanKog99/zsh-config.git
-cd zsh-config
+git clone https://github.com/IlanKog99/ZSH-backup.git
+cd ZSH-backup
 ```
 
 2. Run the setup script:
@@ -72,7 +72,7 @@ chmod +x setup_zsh.sh
 3. Clean up (optional):
 ```bash
 cd ..
-rm -rf zsh-config
+rm -rf ZSH-backup
 ```
 
 4. Log out and log back in (or restart your terminal)
@@ -126,7 +126,7 @@ zinit light username/plugin-name
 ## 📁 Project Structure
 
 ```
-zsh-config/
+ZSH-backup/
 ├── README.md          # This file
 ├── setup_zsh.sh       # Automated installation script
 ├── .zshrc             # Main ZSH configuration
