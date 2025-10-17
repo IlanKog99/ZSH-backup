@@ -42,28 +42,28 @@ install_packages() {
         # Debian/Ubuntu
         print_status "Using apt package manager (Debian/Ubuntu)"
         sudo apt update
-        sudo apt install -y zsh git curl neofetch neovim build-essential
+        sudo apt install -y zsh neofetch neovim build-essential
     elif command_exists yum; then
         # RHEL/CentOS/Fedora
         print_status "Using yum package manager (RHEL/CentOS/Fedora)"
         sudo yum update -y
-        sudo yum install -y zsh git curl neofetch neovim gcc gcc-c++ make
+        sudo yum install -y zsh neofetch neovim gcc gcc-c++ make
     elif command_exists dnf; then
         # Fedora
         print_status "Using dnf package manager (Fedora)"
         sudo dnf update -y
-        sudo dnf install -y zsh git curl neofetch neovim gcc gcc-c++ make
+        sudo dnf install -y zsh neofetch neovim gcc gcc-c++ make
     elif command_exists pacman; then
         # Arch Linux
         print_status "Using pacman package manager (Arch Linux)"
-        sudo pacman -Syu --noconfirm zsh git curl neofetch neovim base-devel
+        sudo pacman -Syu --noconfirm zsh neofetch neovim base-devel
     elif command_exists zypper; then
         # openSUSE
         print_status "Using zypper package manager (openSUSE)"
         sudo zypper refresh
-        sudo zypper install -y zsh git curl neofetch neovim gcc gcc-c++ make
+        sudo zypper install -y zsh neofetch neovim gcc gcc-c++ make
     else
-        print_error "Unsupported package manager. Please install zsh, git, curl, neofetch, and neovim manually."
+        print_error "Unsupported package manager. Please install zsh, neofetch, and neovim manually."
         exit 1
     fi
 }
