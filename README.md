@@ -53,13 +53,13 @@ py='python'         # Python shortcut
 
 #### One-liner Installation
 ```bash
-git clone https://github.com/yourusername/zsh-config.git && cd zsh-config && chmod +x setup_zsh.sh && ./setup_zsh.sh && cd .. && rm -rf zsh-config
+git clone https://github.com/IlanKog99/zsh-config.git && cd zsh-config && chmod +x setup_zsh.sh && ./setup_zsh.sh && cd .. && rm -rf zsh-config
 ```
 
 #### Step-by-step Installation
 1. Clone and enter the repository:
 ```bash
-git clone https://github.com/yourusername/zsh-config.git
+git clone https://github.com/IlanKog99/zsh-config.git
 cd zsh-config
 ```
 
@@ -91,7 +91,7 @@ cp .p10k.zsh ~/.p10k.zsh
 2. Install dependencies:
 ```bash
 # Ubuntu/Debian
-sudo apt update && sudo apt install -y zsh git curl neofetch neovim
+sudo apt update && sudo apt install -y zsh neofetch neovim
 
 # Install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -167,16 +167,6 @@ Uses Zinit for fast plugin loading:
 1. Check the [Zinit documentation](https://github.com/zdharma-continuum/zinit)
 2. Visit [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k)
 3. Review ZSH documentation: `man zsh`
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## ⭐ Acknowledgments
 

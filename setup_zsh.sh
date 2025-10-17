@@ -148,7 +148,7 @@ create_zshrc() {
     else
         print_error "No .zshrc found in current directory!"
         print_error "Please ensure .zshrc is in the same directory as this script."
-        print_error "You can download it from: https://github.com/yourusername/zsh-config"
+        print_error "You can download it from: https://github.com/IlanKog99/zsh-config"
         exit 1
     fi
 }
@@ -164,7 +164,7 @@ create_p10k_config() {
     else
         print_error "No .p10k.zsh found in current directory!"
         print_error "Please ensure .p10k.zsh is in the same directory as this script."
-        print_error "You can download it from: https://github.com/yourusername/zsh-config"
+        print_error "You can download it from: https://github.com/IlanKog99/zsh-config"
         exit 1
     fi
 }
