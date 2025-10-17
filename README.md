@@ -130,9 +130,7 @@ zsh-config/
 ├── README.md          # This file
 ├── setup_zsh.sh       # Automated installation script
 ├── .zshrc             # Main ZSH configuration
-├── .p10k.zsh          # Powerlevel10k theme configuration
-├── .gitignore         # Git ignore rules
-└── LICENSE            # MIT License
+└── .p10k.zsh          # Powerlevel10k theme configuration
 ```
 
 ## 🔧 Configuration Details
@@ -169,10 +167,6 @@ Uses Zinit for fast plugin loading:
 1. Check the [Zinit documentation](https://github.com/zdharma-continuum/zinit)
 2. Visit [Powerlevel10k GitHub](https://github.com/romkatv/powerlevel10k)
 3. Review ZSH documentation: `man zsh`
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
