@@ -64,6 +64,8 @@ chmod +x setup_zsh.sh
 
 3. Log out and log back in (or restart your terminal)
 
+**Note**: The script will copy the exact `.zshrc` and `.p10k.zsh` files from this repository to your home directory, ensuring you get the exact same configuration.
+
 ### Manual Setup
 If you prefer to set up manually:
 
