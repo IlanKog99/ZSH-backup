@@ -50,7 +50,14 @@ py='python'         # Python shortcut
 - curl
 
 ### Quick Setup
-1. Clone this repository:
+
+#### One-liner Installation
+```bash
+git clone https://github.com/yourusername/zsh-config.git && cd zsh-config && chmod +x setup_zsh.sh && ./setup_zsh.sh && cd .. && rm -rf zsh-config
+```
+
+#### Step-by-step Installation
+1. Clone and enter the repository:
 ```bash
 git clone https://github.com/yourusername/zsh-config.git
 cd zsh-config
@@ -62,9 +69,15 @@ chmod +x setup_zsh.sh
 ./setup_zsh.sh
 ```
 
-3. Log out and log back in (or restart your terminal)
+3. Clean up (optional):
+```bash
+cd ..
+rm -rf zsh-config
+```
 
-**Note**: The script will copy the exact `.zshrc` and `.p10k.zsh` files from this repository to your home directory, ensuring you get the exact same configuration.
+4. Log out and log back in (or restart your terminal)
+
+**Note**: The script will copy the exact `.zshrc` and `.p10k.zsh` files from this repository to your home directory, ensuring you get the exact same configuration. After installation, you can safely delete the downloaded files.
 
 ### Manual Setup
 If you prefer to set up manually:

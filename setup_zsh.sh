@@ -148,6 +148,7 @@ create_zshrc() {
     else
         print_error "No .zshrc found in current directory!"
         print_error "Please ensure .zshrc is in the same directory as this script."
+        print_error "You can download it from: https://github.com/yourusername/zsh-config"
         exit 1
     fi
 }
@@ -163,6 +164,7 @@ create_p10k_config() {
     else
         print_error "No .p10k.zsh found in current directory!"
         print_error "Please ensure .p10k.zsh is in the same directory as this script."
+        print_error "You can download it from: https://github.com/yourusername/zsh-config"
         exit 1
     fi
 }
@@ -246,8 +248,7 @@ main() {
     echo ""
     echo -e "${YELLOW}Next steps:${NC}"
     echo "1. Log out and log back in (or restart your terminal)"
-    echo "2. If you didn't have a .p10k.zsh file, run 'p10k configure' to set up your prompt"
-    echo "3. Make sure your terminal is using a Nerd Font for proper icon display"
+    echo "2. Make sure your terminal is using a Nerd Font for proper icon display"
     echo ""
     echo -e "${BLUE}Your ZSH setup includes:${NC}"
     echo "• Powerlevel10k theme with lean prompt"
@@ -257,6 +258,10 @@ main() {
     echo "• zoxide smart directory navigation"
     echo "• Custom aliases and keybindings"
     echo "• neofetch on startup"
+    echo ""
+    echo -e "${YELLOW}Cleanup (optional):${NC}"
+    echo "You can now delete the downloaded files:"
+    echo "  rm -rf zsh-config/"
     echo ""
     echo -e "${GREEN}Enjoy your new ZSH setup!${NC}"
 }
