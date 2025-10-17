@@ -41,51 +41,27 @@ install_packages() {
     if command_exists apt; then
         # Debian/Ubuntu
         print_status "Using apt package manager (Debian/Ubuntu)"
-        if [ "$EUID" -eq 0 ]; then
-            apt update
-            apt install -y zsh neofetch neovim build-essential
-        else
-            sudo apt update
-            sudo apt install -y zsh neofetch neovim build-essential
-        fi
+        sudo apt update
+        sudo apt install -y zsh neofetch neovim build-essential
     elif command_exists yum; then
         # RHEL/CentOS/Fedora
         print_status "Using yum package manager (RHEL/CentOS/Fedora)"
-        if [ "$EUID" -eq 0 ]; then
-            yum update -y
-            yum install -y zsh neofetch neovim gcc gcc-c++ make
-        else
-            sudo yum update -y
-            sudo yum install -y zsh neofetch neovim gcc gcc-c++ make
-        fi
+        sudo yum update -y
+        sudo yum install -y zsh neofetch neovim gcc gcc-c++ make
     elif command_exists dnf; then
         # Fedora
         print_status "Using dnf package manager (Fedora)"
-        if [ "$EUID" -eq 0 ]; then
-            dnf update -y
-            dnf install -y zsh neofetch neovim gcc gcc-c++ make
-        else
-            sudo dnf update -y
-            sudo dnf install -y zsh neofetch neovim gcc gcc-c++ make
-        fi
+        sudo dnf update -y
+        sudo dnf install -y zsh neofetch neovim gcc gcc-c++ make
     elif command_exists pacman; then
         # Arch Linux
         print_status "Using pacman package manager (Arch Linux)"
-        if [ "$EUID" -eq 0 ]; then
-            pacman -Syu --noconfirm zsh neofetch neovim base-devel
-        else
-            sudo pacman -Syu --noconfirm zsh neofetch neovim base-devel
-        fi
+        sudo pacman -Syu --noconfirm zsh neofetch neovim base-devel
     elif command_exists zypper; then
         # openSUSE
         print_status "Using zypper package manager (openSUSE)"
-        if [ "$EUID" -eq 0 ]; then
-            zypper refresh
-            zypper install -y zsh neofetch neovim gcc gcc-c++ make
-        else
-            sudo zypper refresh
-            sudo zypper install -y zsh neofetch neovim gcc gcc-c++ make
-        fi
+        sudo zypper refresh
+        sudo zypper install -y zsh neofetch neovim gcc gcc-c++ make
     else
         print_error "Unsupported package manager. Please install zsh, neofetch, and neovim manually."
         exit 1
@@ -211,11 +187,7 @@ set_default_shell() {
     
     # Add zsh to /etc/shells if not present
     if ! grep -q "$ZSH_PATH" /etc/shells 2>/dev/null; then
-        if [ "$EUID" -eq 0 ]; then
-            echo "$ZSH_PATH" | tee -a /etc/shells
-        else
-            echo "$ZSH_PATH" | sudo tee -a /etc/shells
-        fi
+        echo "$ZSH_PATH" | sudo tee -a /etc/shells
     fi
     
     # Change default shell
