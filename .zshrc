@@ -12,8 +12,8 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
-	mkdir -p "$(dirname $ZINIT_HOME)"
-	git clone https://github.com/zdharma-coninuum/zinit.git "$ZINIT_HOME"
+        mkdir -p "$(dirname $ZINIT_HOME)"
+        git clone https://github.com/zdharma-coninuum/zinit.git "$ZINIT_HOME"
 fi
 
 # Source/Load zinit
@@ -58,6 +58,7 @@ alias ps='ps -aux'
 alias grep='grep --color=auto'
 alias neo='cls && neofetch'
 alias py='python'
+alias cat='lolcat'
 
 # Keybindings
 bindkey -e
